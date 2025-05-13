@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #333; /* Gris oscuro */
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.futuristic-title {
+    font-size: 2em;
+    color: #006F2A; /* Verde Honda */
+}
+
+.back-button {
+    background-color: #006F2A; /* Verde Honda */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #004B1C; /* Verde más oscuro */
+}
+
+.futuristic-box {
+    background-color: rgba(0, 111, 42, 0.1); /* Verde suave */
+    border: 2px solid #006F2A; /* Verde Honda */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 111, 42, 0.5);
+}
+
+.animated-text {
+    font-size: 1.2em;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+.price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #006F2A; /* Verde Honda */
+}
+
+.car-image {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 111, 42, 0.5);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

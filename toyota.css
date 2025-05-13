@@ -1,0 +1,95 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(135deg, #ff0000, #cc0000);
+    padding: 20px 0;
+    box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.futuristic-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.8);
+}
+
+.back-button {
+    background: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background: #cc0000;
+}
+
+.futuristic-box {
+    background: rgba(255, 0, 0, 0.1);
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.7);
+    margin: 20px;
+    text-align: center;
+}
+
+.animated-text {
+    font-size: 1.2em;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0px 0px 5px rgba(255, 0, 0, 0.5);
+    }
+    to {
+        text-shadow: 0px 0px 15px rgba(255, 0, 0, 1);
+    }
+}
+
+.futuristic-subtitle {
+    font-size: 2em;
+    text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.8);
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.car-box {
+    background: rgba(255, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(255, 0, 0, 0.3);
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.car-box:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 20px rgba(255, 0, 0, 0.5);
+    background: #ff0000;
+    color: white;
+}
